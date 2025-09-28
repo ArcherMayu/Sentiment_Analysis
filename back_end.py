@@ -8,9 +8,11 @@
 
 import matplotlib.pyplot as plt
 import nltk
+for pkg in ['stopwords', 'punkt', 'punkt_tab']:
+    nltk.download(pkg)
 import seaborn as sns
 
-nltk.download('stopwords')
+
 from matplotlib import style
 
 style.use('ggplot')
@@ -31,7 +33,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import nltk
 
-nltk.download('punkt')
+
 
 from sklearn.svm import LinearSVC
 
